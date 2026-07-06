@@ -2,7 +2,7 @@ import { formatCurrency } from '../../utils/helpers';
 import Button from '../../ui/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../cart/cartSlice';
-import Deleteitem from '../cart/DeleteItem';
+import DeleteItem from '../cart/DeleteItem';
 import { getCurrentQuantityById } from '../cart/cartSlice';
 import UpdateItemQuantity from '../cart/UpdateItemQuantity';
 
@@ -51,7 +51,7 @@ function MenuItem({ pizza }) {
                 pizzaId={id}
                 currentQuantity={currentQuantity}
               />
-              <Deleteitem pizzaId={id} />
+              <DeleteItem pizzaId={id} />
             </div>
           )}
           {!soldOut && !isInCart && (
