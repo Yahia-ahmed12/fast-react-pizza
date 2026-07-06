@@ -1,5 +1,5 @@
 import { formatCurrency } from '../../utils/helpers';
-import Deleteitem from './Deleteitem';
+import DeleteItem from './DeleteItem';
 import UpdateItemQuantity from './UpdateItemQuantity';
 import { useSelector } from 'react-redux';
 import { getCurrentQuantityById } from './cartSlice';
@@ -19,7 +19,7 @@ function CartItem({ item }) {
             pizzaId={pizzaId}
             currentQuantity={currentQuantity}
           />
-          <Deleteitem pizzaId={pizzaId} />
+          <DeleteItem pizzaId={pizzaId} />
         </div>
       </div>
     </li>
